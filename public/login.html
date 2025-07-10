@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Mental Health Check</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- <script type="module" src="../js/auth.js" defer>
+    </script> -->
+    <script type="module" src="./js/login.js" defer> </script>
+</head>
+
+<body>
+    <div class="loginContainer">
+        <form id="loginForm" class="loginCard">
+            <h2 id="formTitle">Login</h2>
+
+            <input type="email" id="email" placeholder="Email" required />
+            <input type="password" id="password" placeholder="Password" required />
+
+            <!-- Extra signup fields (hidden by default) -->
+            <div id="extraFields" style="display: none;">
+                <input type="text" id="name" placeholder="Full Name" />
+                <input type="number" id="age" placeholder="Age" />
+            </div>
+
+            <button type="submit" class="btn">Continue</button>
+
+            <p class="loginNote">
+                <span id="toggleText">Don't have an account?</span>
+                <a href="#" id="toggleMode">Sign up here</a>
+            </p>
+
+            <p class="error" id="errorText"></p>
+        </form>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,304 @@
+:root{
+     --body-color: rgb(250, 250, 250);
+    --color-white: rgb(255, 255, 255);
+    --text-color-second: rgb(68, 68, 68);
+    --text-color-third: rgb(30, 159, 171);
+    --first-color: rgb(110, 87, 224);
+    --first-color-hover: rgb(40, 91, 212);
+    --second-color: rgb(0, 201, 255);
+    --third-color: rgb(192, 166, 49);
+    --first-shadow-color: rgba(0, 0, 0, 0.1);
+}
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popping',sans-serif;
+}
+
+body{
+    background: var(--body-color);
+}
+
+.container{
+    width: 100%;
+    position: relative;
+}
+
+/* scroll baar design */
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #bbb;
+}
+
+/*Gloabal button design*/
+.btn{
+    font-weight: 500;
+    padding: 12px 20px;
+    background: #efefef;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+.btn:hover{
+    background: var(--second-color);
+    color: var(--color-white);
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    background: var(--body-color);
+    padding-inline: 9vw;
+    transition: .3s;
+    z-index: 100;
+}
+.navLogo{
+    position: relative;
+    img{
+        background: var(--body-color);
+        width: 80px;
+  height: 70px;
+  border-radius: 5rem;
+  position: fixed;
+    }
+}
+.navMenu, .navMenuList{
+    display: flex;
+}
+.navMenu, .navList{
+    list-style: none;
+    position: relative;
+}
+.navLink{
+    text-decoration: none;
+    color: var(--text-color-second);
+    font-weight: 500;
+    padding-inline: 15px;
+    margin-inline: 20px;
+}
+
+.wrapper{
+    padding-inline: 9vw;
+    position: static;
+    min-height: 150vh;
+    padding-top: 120px;
+}
+.quoteBox {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: rgb(20, 110, 133);
+  border-left: 6px solid #27c0eb;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 10px rgb(2, 65, 53) ;
+}
+
+.quoteBox blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.formSection {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: rgb(20, 110, 133);
+  border-radius: 12px;
+  box-shadow: 0px 5px 10px rgb(2, 65, 53) ;
+  color: var(--body-color);
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.formGroup label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 0.5rem;
+}
+.slider-legend {
+  font-size: 1rem;
+  text-align: center;
+  margin: 1rem 0;
+  color: var(--text-color-second);
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    background: #f5f2f2;
+    padding-block: 40px 60px;
+}
+.footerSocialIcons{
+    display: flex;
+    gap: 30px;
+    
+}
+
+.bottomFooter{
+    font-size: 14px;
+    margin-top: 10px;
+    p{
+        color: black;
+    }
+    a{
+        color: black;
+    }
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+.icon:hover{
+    color: var(--first-color);
+    a{
+        color: var(--first-color);
+    }
+}
+
+
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: #f5f5f5;
+}
+
+.loginCard {
+  padding: 2rem;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+    background: rgb(20, 110, 133);
+  border-radius: 12px;
+  box-shadow: 0px 5px 10px rgb(2, 65, 53) ;
+  color: var(--body-color);
+}
+
+.loginCard input {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.loginNote{
+    padding: 1rem;
+}
+#resultHeading{
+    color: var(--text-color-second);
+    padding: 1rem 0;
+}
+.aiTipBox{
+    height: auto;
+    width: 100%;
+   background: rgb(20, 110, 133);
+   border-radius: 1rem;
+    box-shadow: 0px 5px 10px rgb(2, 65, 53) ;
+   h2{
+    color: chartreuse;
+    padding: 10px 0 0 10px;
+   }
+    #tipText{
+    color: white;
+    padding: 10px;
+    font-style: italic;
+   }
+   
+}
+
+
+.chart{
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+    width: 100%;
+    padding: 1rem;
+    flex-direction: column-reverse;
+}
+
+.nav_menu_btn{
+    display: none;
+}
+
+
+@media only screen and (max-width:800px){
+    .navMenu.responsive{
+        left: 0;
+    }
+    .navMenu{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: rgba(255, 255, 255,0.7);
+        backdrop-filter: blur(20px);
+        min-height: 450px;
+        height: 90vh;
+        transition: .3s;
+    }
+    .navMenuList{
+        flex-direction: column;
+    }
+    .nav_menu_btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

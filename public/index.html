@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | mental-health-app</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="container">
+        <nav id="header">
+
+            <div class="navLogo">
+                <a href="index.html"><img src="./src/ChatGPT Image Jul 1, 2025, 06_52_21 PM.png" alt=""></a>
+            </div>
+            <div class="navMenu" id="myNavMenu">
+                <ul class="navMenuList">
+                    <li class="navList">
+                        <a href="index.html" class="navLink">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="navList">
+                        <a href="about.html" class="navLink">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="navList">
+                        <a href="result.html" class="navLink">Result</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="navList">
+                        <div class="navButton" id="userSection">
+                            <button class="btn" id="login" onclick="window.location.href='login.html'">Login</button>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="nav_menu_btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+        <main class="wrapper">
+            <section class="quoteBox">
+                <h2>Daily Motivation 💬</h2>
+                <blockquote id="dailyQuote">Loading quote...</blockquote>
+            </section>
+            <p class="slider-legend">
+                Scale: 0 – Not at all | 1 – A little | 2 – Often | 3 – Nearly all day
+            </p>
+
+            <form id="mentalHealthForm" class="formSection">
+                <h2 style="padding-bottom: 1rem; ">Daily Self-Check</h2>
+
+                <div class="formGroup">
+                    <label for="mood">Did you feel down, low, or hopeless today?</label>
+                    <input type="range" id="mood" class="slider" name=" mood" min="0" max="3">
+
+                </div>
+                <div class="formGroup">
+                    <label for="stress">Were you feeling anxious, nervous, or stressed without a clear
+                        reason?</label>
+                    <input type="range" id="stress" name="stress" class="slider" min=" 0" max="3">
+
+                </div>
+
+                <div class="formGroup">
+                    <label for="sleep">Did you feel tired or drained most of the day?</label>
+                    <input type="range" id="sleep" class="slider" name="sleep" min=" 0" max="3">
+
+                </div>
+
+                <div class="formGroup">
+                    <label for="focus">Did you find it difficult to concentrate or focus today?</label>
+                    <input type="range" class="slider" id="focus" name="focus" min=" 0" max="3">
+
+                </div>
+
+                <div class="formGroup">
+                    <label for="selfPerception">Did you feel confident and positive about yourself?</label>
+                    <input type="range" class="slider" id="selfPerception" name="selfPerception" min=" 0" max="3">
+
+                </div>
+                <div class="formGroup">
+                    <label for="socialConnection">Did you feel lonely or isolated today?</label>
+                    <input type="range" id="socialConnection" name="socialConnection" class="slider" min=" 0" max="3">
+
+                </div>
+                <div class="formGroup">
+                    <label for="functionality">Did you struggle to complete your basic daily tasks (like eating,
+                        working, or
+                        bathing)?</label>
+                    <input type="range" id="functionality" name="functionality" class="slider" min=" 0" max="3">
+
+                </div>
+                <button type="submit" id="submit" class="btn">Submit</button>
+    </div>
+
+    </form>
+
+    </main>
+    <footer>
+        <div class="footerSocialIcons">
+            <div class="icon"><a href="https://www.instagram.com/piiush_here/"><i class="uil uil-instagram"></i></a>
+            </div>
+            <div class="icon"><a
+                    href="https://www.linkedin.com/in/piyush-agrahari-385b28303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                        class="uil uil-linkedin-alt"></i></a></div>
+            <div class="icon"><a href="https://github.com/Piiush04"><i class="uil uil-github-alt"></i></a></div>
+        </div>
+        <div class="bottomFooter">
+            <p>Copyright &copy;<a href="https://piiush04.github.io/Portfolio/" style="text-decoration: none;"> Piyush
+                    Agrahari</a> - All rights
+                reserved</p>
+        </div>
+    </footer>
+    </div>
+
+</body>
+<script type="module" src="./js/scripts.js"></script>
+<script src="./js/quotes.js"></script>
+
+</html>
