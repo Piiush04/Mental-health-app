@@ -28,14 +28,14 @@ Give one helpful, kind, and practical tip in 1–2 sentences that is suitable fo
 `;
 
   try {
-    const response = await cohere.generate({
-      model: "command",
+    const response = await cohere.chat({
+      model: "command-r",
       prompt: prompt,
-      maxTokens: 250,
       temperature: 0.7,
+      maxTokens: 150,
     });
 
-    const tip = response.generations[0].text.trim();
+    const tip = response.text.trim();
     res.json({ tip });
   } catch (err) {
     console.error("Cohere API error:", err);

@@ -34,7 +34,7 @@ onAuthStateChanged(auth, async (user) => {
 
     if (latest) {
       // ✅ Send to Cohere API backend
-      const response = await fetch("http://localhost:5000/api/mental-tip", {
+      const response = await fetch("https://mental-health-app-g87x.onrender.com/api/mental-tip", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ scores: latest.scores })
