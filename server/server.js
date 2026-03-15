@@ -42,7 +42,7 @@ Give one helpful, kind, and practical mental health tip in 1–2 sentences that 
 `;
 
     const response = await cohere.chat({
-      model: "command-r",
+      model: "command-a-03-2025",
       message: message,
       temperature: 0.7,
       maxTokens: 150,
